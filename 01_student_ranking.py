@@ -1,5 +1,4 @@
 
-Here iion* for Case Study 01 as per your syllabus instructions. You
 
 *1. Computational Thinking:*
 Decomposition: Divide into Evaluation + Ranking + Tie Breaking
