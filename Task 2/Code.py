@@ -26,43 +26,5 @@ for i in range(months):
     if units < 100:
         rebate = energy * 0.05
     else:
-        rebate = 0
-
-    total = energy + fixed + surcharge - rebate
-
-    bills.append({
-        "month": month,
-        "units": units,
-        "bill": total
-    })
-
-
-print("\n--- Monthly Electricity Bills ---")
-
-for item in bills:
-    print(item["month"], "- Units:", item["units"],
-          "- Bill: Rs.", round(item["bill"], 2))
-
-
-print("\n--- Unusual Bill Increases ---")
-
-found = False
-
-for i in range(1, len(bills)):
-
-    previous = bills[i - 1]["bill"]
-    current = bills[i]["bill"]
-
-    if previous > 0:
-        increase = ((current - previous) / previous) * 100
-
-        if increase > 30:
-            print("Unusual increase in", bills[i]["month"])
-            print("Increase:", round(increase, 2), "%")
-            found = True
-
-if not found:
-    print("No unusual increases found.")
-
-print("\nTotal Months:", months)
-print("Program Completed.")
+        rebate =
+        
